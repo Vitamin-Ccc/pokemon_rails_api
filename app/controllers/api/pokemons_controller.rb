@@ -39,4 +39,5 @@ class Api::PokemonsController < ApplicationController
   def set_pokemon
     @pokemon = Pokemon.find(params[:id])
   end
+  
 end
