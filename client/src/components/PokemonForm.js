@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import { useParams, useNavigate } from "react-router";
 import axios from "axios";
 
 const PokemonForm = (props) => {
@@ -7,6 +8,9 @@ const PokemonForm = (props) => {
   const [name, setName] = useState(initialName ? initialName : "");
   const [location, setLocation] = useState(initialLocation ? initialLocation : "");
   const [move, setMove] = useState(initialMove ? initialMove : "");
+
+  // const params = useParams();
+  // const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
